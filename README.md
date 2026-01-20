@@ -14,9 +14,8 @@
   Außerdem sollten die Gründe für die Datenweitergabe aus User-Sicht eingegrenzt werden.
   Die folgende Tabelle wurde dabei ausgearbeitet: 
 </p>
-  <br>
 <img width="992" height="413" alt="image" src="https://github.com/user-attachments/assets/389287e2-4992-4972-a65c-0569549582d6" />
-  <br>
+
   <p>Den Daten wurde in der hier gezeigten Reihenfolge je eine ID zugeordnet (001 bis 016).</p>
 
 # Konzeption - 2. Schritt
@@ -27,18 +26,16 @@
   Den Zwecken wurden IDs zugeordnet (PID = Primärzweck-ID, FID = Funktionszweck-ID).
   Es wurde folgende Tabelle ausgearbeitet:
 </p>
-  <br>
-  <img width="959" height="317" alt="image" src="https://github.com/user-attachments/assets/002b0aef-3934-47e2-bc9e-fa0efdd21f46" />
-  <br>
+
+<img width="991" height="317" alt="image" src="https://github.com/user-attachments/assets/a542049c-4f32-4c8d-ab18-a2a260093596" />
+
 
 # Konzeption - 3. Schritt
 <p>
   In einem dritten Schritt wurden alle PIDs und FIDs miteinander permutiert, um alle so möglichen Zweckkombinationen auszuloten und ferner festzustellen, welche Kombinationen realistisch sind und welche nicht.
   Dabei entstand folgende Tabelle:
   </p>
-  <br>
   <img width="556" height="637" alt="image" src="https://github.com/user-attachments/assets/5e6e806a-bb85-459d-8294-9265f91c7e40" />
-  <br>
 <p>
   Rot sind dabei unrealistische Szenarien und grün typische Szenarien.
   Typische gegenseitige Ausschlusskriterien sind: Gesetz und Präferenz, Komfort und Abrechnung, Werbung und Zugriff sowie Werbung und Abrechnung.
