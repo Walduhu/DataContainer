@@ -195,8 +195,11 @@
 </code></pre>
 <p>
 In diesem Profil werden alle PID-FID-Kombinationen einer Anfrage genehmigt, die gesetzliche und vertragliche Primärzwecke enthalten. Primärzwecke für Werbung werden dagegen abgelehnt. Funktionszwecke werden per Wildcards alle genehmigt.
-Die Anzahl an vorhandenen Profilen ist unbegrenzt und je nach Anfrage kann ein anderes Profil vom User ausgewählt werden. So wird jedes Mal entschieden, wie auf eine Datenanfrage reagiert wird.
-<br>
+</p>
+<p>
+  Die Anzahl an vorhandenen Profilen ist unbegrenzt und je nach Anfrage kann ein anderes Profil vom User ausgewählt werden. So wird jedes Mal entschieden, wie auf eine Datenanfrage reagiert wird.
+</p>
+<p>
 Mithilfe einer request.json und einer profile.json generiert die Datencontainer-App eine Antwort an die anfragende App (response.json). Unter Einbeziehung von Dummy-Daten und der beiden Beispiele oben sähe diese dann z.B. so aus:
 </p>
 <pre><code class="language-json">
