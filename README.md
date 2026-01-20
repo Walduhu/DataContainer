@@ -46,7 +46,7 @@
   Hierzu wurde folgender Plan zur Funktionsweise der App ausgearbeitet:
   Der Datenaustausch erfolgt per json-Dateien. Dabei erhält die Datencontainer-App eine Anfrage (request.json). Diese kann z.B. so aussehen:
 </p>
-  
+  ```json
   {
     "requestId": "req-001",
     "requestingApp": {
@@ -166,10 +166,12 @@
         }
     ]
 }
+```
 <p>
   Im Folgenden werden mithilfe von einem vordefinierten Profil (profile.json) die angefragten Daten gefiltert.
   Ein Profil genehmigt dann z.B. nur bestimmte Arten von PID-FID-Kombinationen und könnte so aussehen:
 </p>
+```json
 {
   "profileType": "Orange",
   "grants": [
@@ -190,13 +192,14 @@
     }
   ]
 }
+```
 <p>
 In diesem Profil werden alle PID-FID-Kombinationen einer Anfrage genehmigt, die gesetzliche und vertragliche Primärzwecke enthalten. Primärzwecke für Werbung werden dagegen abgelehnt. Funktionszwecke werden per Wildcards alle genehmigt.
 Die Anzahl an vorhandenen Profilen ist unbegrenzt und je nach Anfrage kann ein anderes Profil vom User ausgewählt werden. So wird jedes Mal entschieden, wie auf eine Datenanfrage reagiert wird.
 <br>
 Mithilfe einer request.json und einer profile.json generiert die Datencontainer-App eine Antwort an die anfragende App (response.json). Unter Einbeziehung von Dummy-Daten und der beiden Beispiele oben sähe diese dann z.B. so aus:
 </p>
-  
+```json
 {
   "responseId": "resp-97be00fb-b494-4e9a-a927-dea51017f351",
   "requestId": "req-001",
@@ -271,9 +274,10 @@ Mithilfe einer request.json und einer profile.json generiert die Datencontainer-
     }
   ]
 }
-
+```
 # Hinweis: 
 <p>
-  Damit die Datencontainer-App funktioniert, müssen sich alle request.json- und profile.json-Dateien im Basisverzeichnis befinden, also dort, wo die exe-Datei des Projekts erzeugt wird, z.B. C:\Users\...\DataContainer\DataContainerApp\bin\Debug\net10.0 
+  Damit die Datencontainer-App funktioniert, müssen sich alle request.json- und profile.json-Dateien im Basisverzeichnis befinden, also dort, wo die exe-Datei des Projekts erzeugt wird, z.B. 
+  <p>C:\Users\...\DataContainer\DataContainerApp\bin\Debug\net10.0</p>
   Hier werden auch die erzeugten response.json-Dateien gespeichert.
 </p>
