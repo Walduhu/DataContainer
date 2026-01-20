@@ -10,13 +10,12 @@
 <p>
   Zunächst galt es zu ermitteln, welche allgemeinen Daten eine natürliche oder rechtliche Person haben kann und die Semantik hinter den Bezeichnungen der Daten zu klären.
   Außerdem sollten die Gründe für die Datenweitergabe aus User-Sicht eingegrenzt werden.
-  Die folgende Tabelle wurde dabei ausgearbeitet: </p>
-  <br>
-  <img width="992" height="389" alt="image" src="https://github.com/user-attachments/assets/27decbf4-8395-48a8-9a7f-6c64a9baf5bd" />
-  <br>
-<p>
-  Den Daten wurde in der hier gezeigten Reihenfolge je eine ID zugeordnet (001 bis 016).
+  Die folgende Tabelle wurde dabei ausgearbeitet: 
 </p>
+  <br>
+<img width="992" height="413" alt="image" src="https://github.com/user-attachments/assets/389287e2-4992-4972-a65c-0569549582d6" />
+  <br>
+  Den Daten wurde in der hier gezeigten Reihenfolge je eine ID zugeordnet (001 bis 016).
 
 # Konzeption - 2. Schritt
 <p>
@@ -28,8 +27,8 @@
   <br>
   <img width="959" height="317" alt="image" src="https://github.com/user-attachments/assets/002b0aef-3934-47e2-bc9e-fa0efdd21f46" />
   <br>
-  
-# Konzeption - 3.Schritt
+</p>
+# Konzeption - 3. Schritt
 <p>
   In einem dritten Schritt wurden alle PIDs und FIDs miteinander permutiert, um alle so möglichen Zweckkombinationen auszuloten und ferner festzustellen, welche Kombinationen realistisch sind und welche nicht.
   Dabei entstand folgende Tabelle:
