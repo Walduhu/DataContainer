@@ -201,8 +201,11 @@ In diesem Profil werden alle PID-FID-Kombinationen einer Anfrage genehmigt, die 
 </p>
 <p>
 Mithilfe einer request.json und einer profile.json generiert die Datencontainer-App eine Antwort an die anfragende App (response.json). 
+</p>
+<p>
 Um Userdaten weitergeben zu können, müssen diese in einer oder mehrerer userData.json-Dateien vorliegen. Es könnten z.B. zwei Userprofile existieren: Einmal mit echten sensiblen Daten und einmal mit unwichtigen Alternativdaten, z.B. eine Zweit-E-Mail-Adresse für aggressive Werbung.
 Ein echtes Userprofil könnte so aussehen:
+</p>
 <pre><code class="language-json">
 {
   "001": "Max Mustermann",
