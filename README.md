@@ -8,7 +8,7 @@
   Dieses Repo enthält nicht die fertige App und hat kein GUI, sondern soll nur die Arbeitsweise eines Datencontainers aufzeigen, der Datenanfragen anderer Apps bearbeitet. 
 </p>
 
-<h1> Konzeption - 1. Schritt</h1>
+<h2> Konzeption - 1. Schritt</h2>
 <p>
   Zunächst galt es zu ermitteln, welche allgemeinen Daten eine natürliche oder rechtliche Person haben kann und die Semantik hinter den Bezeichnungen der Daten zu klären.
   Außerdem sollten die Gründe für die Datenweitergabe aus User-Sicht eingegrenzt werden.
@@ -18,7 +18,7 @@
 
   <p>Den Daten wurde in der hier gezeigten Reihenfolge je eine ID zugeordnet (001 bis 016).</p>
 
-<h1> Konzeption - 2. Schritt</h1>
+<h2> Konzeption - 2. Schritt</h2>
 <p>
   Als nächstes war es wichtig, Zwecke und Verwendungsarten dieser Daten aus Sicht der anfragenden Apps zu klären.
   Da Zwecke vielfältig und unübersichtlich sind und sich teilweise überschneiden, wurde entschieden, den Daten je zwei Arten von Zwecken zuzuordnen: Primärzwecke und Funktionszwecke.
@@ -30,7 +30,7 @@
 <img width="991" height="317" alt="image" src="https://github.com/user-attachments/assets/a542049c-4f32-4c8d-ab18-a2a260093596" />
 
 
-<h1> Konzeption - 3. Schritt</h1>
+<h2> Konzeption - 3. Schritt</h2>
 <p>
   In einem dritten Schritt wurden alle PIDs und FIDs miteinander permutiert, um alle so möglichen Zweckkombinationen auszuloten und ferner festzustellen, welche Kombinationen realistisch sind und welche nicht.
   Dabei entstand folgende Tabelle:
@@ -41,12 +41,12 @@
   Typische gegenseitige Ausschlusskriterien sind: Gesetz und Nutzungseinstellungen, Komfort und Zahlungsabwicklung, Werbung und Zugriffskontrolle sowie Werbung und Zahlungsabwicklung.
 </p>
 
-<h1> Implementierung </h1>
+<h2> Implementierung </h2>
 <p>
   Hierzu wurde folgender Plan zur Funktionsweise der App ausgearbeitet:
   Der Datenaustausch erfolgt per json-Dateien. Dabei erhält die Datencontainer-App eine Anfrage (request.json). Diese kann z.B. so aussehen:
 </p>
-```json
+<pre><code class="language-json">
   {
     "requestId": "req-001",
     "requestingApp": {
@@ -166,12 +166,12 @@
         }
     ]
 }
-
+</code></pre>
 <p>
   Im Folgenden werden mithilfe von einem vordefinierten Profil (profile.json) die angefragten Daten gefiltert.
   Ein Profil genehmigt dann z.B. nur bestimmte Arten von PID-FID-Kombinationen und könnte so aussehen:
 </p>
-```json
+<pre><code class="language-json">
 {
   "profileType": "Orange",
   "grants": [
@@ -192,14 +192,14 @@
     }
   ]
 }
-
+</code></pre>
 <p>
 In diesem Profil werden alle PID-FID-Kombinationen einer Anfrage genehmigt, die gesetzliche und vertragliche Primärzwecke enthalten. Primärzwecke für Werbung werden dagegen abgelehnt. Funktionszwecke werden per Wildcards alle genehmigt.
 Die Anzahl an vorhandenen Profilen ist unbegrenzt und je nach Anfrage kann ein anderes Profil vom User ausgewählt werden. So wird jedes Mal entschieden, wie auf eine Datenanfrage reagiert wird.
 <br>
 Mithilfe einer request.json und einer profile.json generiert die Datencontainer-App eine Antwort an die anfragende App (response.json). Unter Einbeziehung von Dummy-Daten und der beiden Beispiele oben sähe diese dann z.B. so aus:
 </p>
-```json
+<pre><code class="language-json">
 {
   "responseId": "resp-97be00fb-b494-4e9a-a927-dea51017f351",
   "requestId": "req-001",
@@ -274,8 +274,8 @@ Mithilfe einer request.json und einer profile.json generiert die Datencontainer-
     }
   ]
 }
-
-<h1> Hinweis: </h1>
+</code></pre>
+<h2> Hinweis: </h2>
 <p>
   Damit die Datencontainer-App funktioniert, müssen sich alle request.json- und profile.json-Dateien im Basisverzeichnis befinden, also dort, wo die exe-Datei des Projekts erzeugt wird, z.B. 
   <p>C:\Users\...\DataContainer\DataContainerApp\bin\Debug\net10.0</p>
