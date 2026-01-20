@@ -38,7 +38,7 @@
   <img width="556" height="637" alt="image" src="https://github.com/user-attachments/assets/5e6e806a-bb85-459d-8294-9265f91c7e40" />
 <p>
   Rot sind dabei unrealistische Szenarien und grün typische Szenarien.
-  Typische gegenseitige Ausschlusskriterien sind: Gesetz und Präferenz, Komfort und Abrechnung, Werbung und Zugriff sowie Werbung und Abrechnung.
+  Typische gegenseitige Ausschlusskriterien sind: Gesetz und Nutzungseinstellungen, Komfort und Zahlungsabwicklung, Werbung und Zugriffskontrolle sowie Werbung und Zahlungsabwicklung.
 </p>
 
 # Implementierung
