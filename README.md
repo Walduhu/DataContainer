@@ -280,7 +280,7 @@ Mithilfe einer request.json und einer profile.json generiert die Datencontainer-
 </code></pre>
 <h2> Hinweis: </h2>
 <p>
-  Damit die Datencontainer-App funktioniert, müssen sich alle request.json- und profile.json-Dateien im Basisverzeichnis befinden, also dort, wo die exe-Datei des Projekts erzeugt wird, z.B. 
+  Damit die Bearbeitung von Anfragen funktioniert, müssen sich alle request.json- und profile.json-Dateien im Basisverzeichnis befinden, also dort, wo die exe-Datei des Projekts erzeugt wird, z.B. 
   <p>C:\Users\...\DataContainer\DataContainerApp\bin\Debug\net10.0</p>
   Hier werden auch die erzeugten response.json-Dateien gespeichert.
 </p>
