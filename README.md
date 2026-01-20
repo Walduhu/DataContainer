@@ -46,7 +46,7 @@
   Hierzu wurde folgender Plan zur Funktionsweise der App ausgearbeitet:
   Der Datenaustausch erfolgt per json-Dateien. Dabei erhält die Datencontainer-App eine Anfrage (request.json). Diese kann z.B. so aussehen:
 </p>
-  ```json
+```json
   {
     "requestId": "req-001",
     "requestingApp": {
