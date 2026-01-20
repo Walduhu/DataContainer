@@ -3,6 +3,8 @@
 <p>
   Aufgabe war es, eine Anwendung zu entwickeln, die weniger technikaffinen Menschen die Freigabe ihrer persönlichen Daten an verschiedene Apps erleichtert.
   Dies können z.B. Apps von Online-Shops, Supermärkten, Krankenkassen oder Bezahldiensten sein.
+</p>
+  <p>
   Dieses Repo enthält nicht die fertige App und hat kein GUI, sondern soll nur die Arbeitsweise eines Datencontainers aufzeigen, der Datenanfragen anderer Apps bearbeitet. 
 </p>
 
