@@ -1,7 +1,7 @@
 # DataContainer
 
 <p>
-  Aufgabe war es, eine Anwendung zu entwickeln, die weniger technikaffinen Menschen die Freigabe ihrer persönlichen Daten an verschiedene Apps erleichtert.
+  Aufgabe war es, eine Datencontainer-Anwendung zu entwickeln, die weniger technikaffinen Menschen die Freigabe ihrer persönlichen Daten an verschiedene Apps erleichtert.
   Dies können z.B. Apps von Online-Shops, Supermärkten, Krankenkassen oder Bezahldiensten sein.
 </p>
   <p>
