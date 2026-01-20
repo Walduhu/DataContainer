@@ -200,7 +200,28 @@ In diesem Profil werden alle PID-FID-Kombinationen einer Anfrage genehmigt, die 
   Die Anzahl an vorhandenen Profilen ist unbegrenzt und je nach Anfrage kann ein anderes Profil vom User ausgewählt werden. So wird entschieden, wie auf eine Datenanfrage reagiert wird.
 </p>
 <p>
-Mithilfe einer request.json und einer profile.json generiert die Datencontainer-App eine Antwort an die anfragende App (response.json). Unter Einbeziehung von Dummy-Daten und der beiden Beispiele oben sähe diese dann z.B. so aus:
+Mithilfe einer request.json und einer profile.json generiert die Datencontainer-App eine Antwort an die anfragende App (response.json). 
+Um Userdaten weitergeben zu können, müssen diese in einer oder mehrerer userData.json-Dateien vorliegen. Es könnten z.B. zwei Userprofile existieren: Einmal mit echten sensiblen Daten und einmal mit unwichtigen Alternativdaten, z.B. eine Zweit-E-Mail-Adresse für aggressive Werbung.
+Ein echtes Userprofil könnte so aussehen:
+<pre><code class="language-json">
+{
+  "001": "Max Mustermann",
+  "002": "12.09.1989",
+  "003": "max.mustermann@example.com",
+  "004": "Hauptstr. 1, 12345 Berlin",
+  "005": "0160987654321",
+  "007": "A123456789",
+  "008": "12345678901",
+  "009": "98120989S001",
+  "010": "DE12100500001234567890",
+  "012": "System",
+  "013": "ja",
+  "014": "Deutsch",
+  "015": "Medium"
+}
+</code></pre>
+<p>
+Unter Einbeziehung dieser Dummy-Daten und der beiden json-Beispiele oben sähe die response.json dann z.B. so aus:
 </p>
 <pre><code class="language-json">
 {
@@ -280,7 +301,7 @@ Mithilfe einer request.json und einer profile.json generiert die Datencontainer-
 </code></pre>
 <h2> Hinweis: </h2>
 <p>
-  Damit die Bearbeitung von Anfragen funktioniert, müssen sich alle request.json- und profile.json-Dateien im Basisverzeichnis befinden, also dort, wo die exe-Datei des Projekts erzeugt wird, z.B. 
+  Damit die Bearbeitung von Anfragen funktioniert, müssen sich alle userData-, request- und profile-Dateien im Basisverzeichnis befinden, also dort, wo die exe-Datei des Projekts erzeugt wird, z.B. 
   <p>C:\Users\...\DataContainer\DataContainerApp\bin\Debug\net10.0</p>
-  Hier werden auch die erzeugten response.json-Dateien gespeichert.
+  Hier werden auch die erzeugten response-Dateien gespeichert.
 </p>
